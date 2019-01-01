@@ -1,0 +1,10 @@
+---
+output: github_document
+title: 'webshot 包 使用技巧'
+---
+
+```{r eval=F}
+webshot::install_phantomjs()
+```
+
+需要外部的 PhantomJS 程序支持。
