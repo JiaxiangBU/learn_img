@@ -51,3 +51,12 @@ knitr::include_graphics('save_blog_site_screenshot_title.png')
 ```
 
 这个应该是英文标题才行。
+
+```{r}
+webshot(url
+        ,file = 'save_blog_site_screenshot_phone.png'
+        ,vwidth = 400)
+knitr::include_graphics('save_blog_site_screenshot_phone.png')
+```
+
+这样可以适配手机。

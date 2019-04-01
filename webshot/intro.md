@@ -11,11 +11,6 @@ webshot::install_phantomjs()
 
 ``` r
 library(webshot)
-```
-
-    ## Warning: package 'webshot' was built under R version 3.5.2
-
-``` r
 url <- "https://jiaxiangli.netlify.com/"
 webshot(
     url = url
@@ -67,7 +62,7 @@ knitr::include_graphics('save_blog_site_screenshot_css.png')
 ![](save_blog_site_screenshot_css.png)<!-- -->
 
 <input type="checkbox" id="checkbox1" class="styled">修改函数，不需要save，直接
-preview
+preview 但是平时在用的时候，没有preview
 
 ``` r
 webshot(url
@@ -84,3 +79,19 @@ knitr::include_graphics('save_blog_site_screenshot_title.png')
 ![](save_blog_site_screenshot_title.png)<!-- -->
 
 这个应该是英文标题才行。
+
+``` r
+webshot(url
+        ,file = 'save_blog_site_screenshot_phone.png'
+        ,vwidth = 400)
+```
+
+![](intro_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+
+``` r
+knitr::include_graphics('save_blog_site_screenshot_phone.png')
+```
+
+![](save_blog_site_screenshot_phone.png)<!-- -->
+
+这样可以适配手机。
